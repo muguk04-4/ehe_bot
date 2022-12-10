@@ -23,6 +23,7 @@ async def stop_doing_that_shit(ctx):
     await ctx.send('https://tenor.com/view/nandayo-gif-18919523')
 #로아 닉네임 입력하면 정보띄워주기
 #연동필요
+#https://toramko.tistory.com/entry/python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-requests-%EB%A1%9C-REST-API-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0?category=867426
 @bot.command(aliases=['Nickname'])
 async def stop_doing_that_shit(ctx):
     await ctx.send('CharacterInfo')
