@@ -2,9 +2,13 @@
 import discord
 from discord.ext import commands
 from to import Token
+import requests
+import json
 
-#명령어: ehe
-bot=commands.Bot(command_prefix='ehe')
+my_jwt = "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAwMDA0OTcifQ.JwVQU-cdtyXpwFMJuZeRxPZb_pyz9JWY-2zZCwNwr2OaD2AbYSbHadZw8dIjO4b1f-BvmvEi0Xr6LDdnu0hWSZu3l1C7SIlf5IJPglJwtqPr2bTG2KVVjoq0SWmhxZkLNNuKBjXHG1ADGzem_3vtKnnbHkANBV8uZGzxfz3v-62bUMEAdKKdougJekJ-r22td_SPzv5jgpKlFAae1bHu2nYx7Q0Dz78pxWBnBLJsLCvs8enEFuYrAfD-IICDPntETTmSQjDOH23OkQJseVJnGfvzTyjcUvZO8d0M4-xv3p27D5E2tr9hUZyNnlDhxpncZ63FyMIT8FpUqM5hsPPDjA"
+#명령어: / (강제임)
+bot=commands.Bot(command_prefix='/')
+
 @bot.event
 async def on_ready():
     print('로그인중입니다. ')
@@ -14,21 +18,14 @@ async def on_ready():
 
 #------------------- 명렁어 목록 -------------------
 #페이몬 대답하기
-@bot.command(aliases=[''])
-async def ehe(ctx):
-    await ctx.send('Ehe te NADAYO!!!!!')
+@commands.command(aliases=['ehe'])
+async def eheyo(ctx):
+    await ctx.send("Ehe te NADAYO!!!!!")
 #페이몬 움짤 보내기
-@bot.command(aliases=['he'])
+@commands.command(aliases=['ehehe'])
 async def stop_doing_that_shit(ctx):
     await ctx.send('https://tenor.com/view/nandayo-gif-18919523')
 #로아 닉네임 입력하면 정보띄워주기
-#연동필요
-#flask? 조사가 필요해보임
-#JWT 토큰 잊지말기
-#https://toramko.tistory.com/entry/python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-requests-%EB%A1%9C-REST-API-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0?category=867426
-@bot.command(aliases=['Nickname'])
-async def stop_doing_that_shit(ctx):
-    await ctx.send('CharacterInfo')
 
 #실행
 bot.run(Token)
