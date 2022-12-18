@@ -1,6 +1,7 @@
 #bot.py - 봇 관리
 import discord
 from discord.ext import commands
+#여기 수정해야됨 토큰 못불러오는중
 from .to import Token
 
 #명령어: / (강제임)

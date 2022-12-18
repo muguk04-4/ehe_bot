@@ -19,4 +19,3 @@ def send_api(path, method):
         print("response text %r" % response.text)
     except Exception as ex:
         print(ex)
-    
