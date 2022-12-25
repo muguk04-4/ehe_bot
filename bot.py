@@ -1,8 +1,10 @@
 #bot.py - 봇 관리
 import discord
 from discord.ext import commands
-#여기 수정해야됨 토큰 못불러오는중
-from .to import Token
+#테스트해봐야됨
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+from to import Token
 
 #명령어: / (강제임)
 bot=commands.Bot(command_prefix='/')
