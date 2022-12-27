@@ -3,11 +3,12 @@ import discord
 from discord.ext import commands
 #테스트해봐야됨
 import sys
+import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from to import Token
 
 #명령어: / (강제임)
-bot=commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='!',intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
