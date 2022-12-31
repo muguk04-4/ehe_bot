@@ -2,6 +2,8 @@
 import discord
 from discord.ext import commands
 #테스트해봐야됨
+#-------여기서 오류인지 토큰 오류인지 모르겠음
+#-------높은 확률로 이쪽 에러인듯.
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
