@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 #테스트해봐야됨
 #------ 토큰 사용 불가 에러
+#------ 토큰 주소를 바꿔야 할까
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
