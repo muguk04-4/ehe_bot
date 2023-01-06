@@ -10,7 +10,7 @@ def send_api(path, method):
     url = API_HOST + path
     headers = {'Content-Type': 'application/json', 'charset': 'UTF-8', 'Accept': '*/*', 'authorization': my_jwt}
     body = {
-        "key1": "value1":,
+        "key1": "value1",
         "key2": "value2"
     }
     try:
